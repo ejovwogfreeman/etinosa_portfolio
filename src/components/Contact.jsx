@@ -16,7 +16,7 @@ const Contact = () => {
         </p>
         <div
           className="w-full h-screen bg-[#0a192f] md:flex justify-center p-4 mt-5"
-          style={{ width: "90%" }}
+          style={{ width: "100%" }}
         >
           <div className="text-gray-300 pr-10">
             <h1 className="text-2xl">Get In Touch</h1>
