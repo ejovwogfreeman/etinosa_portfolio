@@ -56,21 +56,21 @@ const Contact = () => {
               type="text"
               placeholder="Name"
               name="name"
-              style={{ border: "none", outline: "none" }}
+              style={{ border: "none", outline: "none", width: "100%" }}
             />
             <input
               className="my-4 p-2 bg-[#ccd6f6]"
               type="email"
               placeholder="Email"
               name="email"
-              style={{ border: "none", outline: "none" }}
+              style={{ border: "none", outline: "none", width: "100%" }}
             />
             <textarea
               className="bg-[#ccd6f6] p-2"
               name="message"
               rows="10"
               placeholder="Message"
-              style={{ border: "none", outline: "none" }}
+              style={{ border: "none", outline: "none", width: "100%" }}
             ></textarea>
             <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">
               Let's Collaborate
