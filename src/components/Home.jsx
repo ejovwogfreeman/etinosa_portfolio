@@ -1,6 +1,7 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import profileImg from "../assets/profile_img.png";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -23,8 +24,10 @@ const Home = () => {
               applications.
             </p>
             <div>
-              <a
-                href="#work"
+              <Link
+                to="work"
+                smooth={true}
+                duration={500}
                 className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-yellow-600 hover:border-yellow-600"
                 style={{ display: "inline-flex", cursor: "pointer" }}
               >
@@ -32,7 +35,7 @@ const Home = () => {
                 <span className="group-hover:rotate-90 duration-300">
                   <HiArrowNarrowRight className="ml-3 " />
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="md:mt-0 mt-10">
