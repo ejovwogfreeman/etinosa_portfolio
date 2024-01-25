@@ -6,3 +6,14 @@
 .icons {
   font-size: 30px;
 }
+
+.contact {
+  padding-top: 200px;
+}
+
+@media screen and (max-width: 500px) {
+  .contact {
+    padding-top: 500px;
+    padding-bottom: 700px;
+  }
+}
