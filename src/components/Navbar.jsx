@@ -53,7 +53,11 @@ const Navbar = () => {
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
+      <div
+        onClick={handleClick}
+        className="md:hidden z-10"
+        style={{ fontSize: "30px" }}
+      >
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
