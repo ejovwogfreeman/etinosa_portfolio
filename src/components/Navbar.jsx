@@ -4,7 +4,7 @@ import {
   FaTimes,
   FaGithub,
   FaLinkedin,
-  FaInstagram,
+  FaTwitter,
   // FaFacebook,
   // FaLinkedinIn,
 } from "react-icons/fa";
@@ -97,7 +97,7 @@ const Navbar = () => {
       </ul>
 
       {/* Social icons */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0 z-10">
+      <div className="hidden lg:flex fixed flex-col top-[30%] left-0 z-10">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
@@ -116,6 +116,15 @@ const Navbar = () => {
               Github <FaGithub size={30} />
             </a>
           </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#511027]">
+            <a
+              className="flex justify-between items-center w-full text-gray-300"
+              href="https://www.instagram.com/Samtec_15"
+            >
+              Instagram <FaTwitter size={30} />
+            </a>
+          </li>
+
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300   bg-[#0b062c]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
@@ -124,15 +133,6 @@ const Navbar = () => {
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#511027]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://www.instagram.com/Samtec_15"
-            >
-              Instagram <FaInstagram size={30} />
-            </a>
-          </li>
-
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#1d0821]">
             <a
               className="flex justify-between items-center w-full text-gray-300"

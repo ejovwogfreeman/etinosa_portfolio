@@ -1,51 +1,47 @@
 import React from "react";
 import {
-  AiFillInstagram,
-  AiFillFacebook,
-  AiFillLinkedin,
-  AiFillYoutube,
-} from "react-icons/ai";
-import { FaTwitterSquare, FaGithubSquare } from "react-icons/fa";
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  // FaFacebook,
+  // FaLinkedinIn,
+} from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 import "../css/SocialMedia.css";
 
 const SocialMedia = ({ color }) => {
   return (
     <div className="social-icons" style={{ color: color, borderColor: color }}>
       <a
-        href="https://www.youtube.com/@thegbmedia/"
+        href="https://www.facebook.com/"
         style={{ color: color, borderColor: color }}
       >
-        <AiFillYoutube />
+        <FaLinkedin />
       </a>
       <a
-        href="https://www.facebook.com/ejovwo.gfreeman/"
+        href="https://www.instagram.com/"
         style={{ color: color, borderColor: color }}
       >
-        <AiFillFacebook />
+        <FaGithub />
       </a>
       <a
-        href="https://www.instagram.com/ejovwogfreeman/"
+        href="https://www.twitter.com/"
         style={{ color: color, borderColor: color }}
       >
-        <AiFillInstagram />
+        <FaTwitter />
       </a>
       <a
-        href="https://www.twitter.com/ejovwogfreeman/"
+        href="https://www.linkedin.com/"
         style={{ color: color, borderColor: color }}
       >
-        <FaTwitterSquare />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/godbless-ejovwo/"
-        style={{ color: color, borderColor: color }}
-      >
-        <AiFillLinkedin />
+        <HiOutlineMail />
       </a>
       <a
         href="https://www.github.com/ejovwogfreeman/"
         style={{ color: color, borderColor: color }}
       >
-        <FaGithubSquare />
+        <BsFillPersonLinesFill />
       </a>
     </div>
   );

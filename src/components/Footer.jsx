@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="line"></div>
-      <h1 className="text-4xl">Etinosa Omoruyi.</h1>
+      <h1 className="text-4xl">Etinosa Omoruyi</h1>
       <p className="social">
         <SocialMedia color="white" />
       </p>
