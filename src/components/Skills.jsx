@@ -99,7 +99,7 @@ const Skills = () => {
             <div className="relative w-full h-4 bg-gray-300 rounded-lg">
               <div
                 className="absolute top-0  border left-0 h-full bg-blue-900 rounded-lg"
-                style={{ width: "calc(80% - 2px)" }}
+                style={{ width: "calc(100%)" }}
               ></div>
             </div>
           </div>
@@ -109,7 +109,7 @@ const Skills = () => {
             <div className="relative w-full h-4 bg-gray-300 rounded-lg">
               <div
                 className="absolute top-0  border left-0 h-full bg-blue-900 rounded-lg"
-                style={{ width: "calc(80% - 2px)" }}
+                style={{ width: "calc(100%)" }}
               ></div>
             </div>
           </div>
