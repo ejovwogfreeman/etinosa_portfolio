@@ -30,7 +30,7 @@ const Skills = () => {
             <p className="my-4">HTML</p>
             <div className="relative w-full h-4 bg-gray-300 rounded-lg">
               <div
-                className="absolute top-0  border left-0 h-full bg-blue-900 rounded-lg"
+                className="absolute top-0 border left-0 h-full bg-blue-900 rounded-lg"
                 style={{ width: "calc(50% - 2px)" }}
               ></div>
             </div>
