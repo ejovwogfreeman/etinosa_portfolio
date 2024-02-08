@@ -10,8 +10,11 @@ const Home = () => {
     <div name="home" className="w-full bg-[#0a192f] general home">
       {/* Container */}
       <div className="max-w-[1500px] mx-auto px-2 md:px-8 flex flex-col justify-center h-full">
-        <div className="flex flex-col-reverse md:flex-row items-center justify-center">
-          <div className="text-center sm:text-start">
+        <div
+          className="flex flex-col-reverse md:flex-row items-center justify-center"
+          id="corner"
+        >
+          <div className="text-start">
             <p className="text-yellow-600 font-normal">Hi, my name is</p>
             <h1 className="text-xl sm:text-3xl font-bold text-[#ccd6f6]">
               OMORUYI ETINOSA
@@ -25,9 +28,9 @@ const Home = () => {
               Currently, I’m focused on building responsive full-stack web
               applications.
             </p>
-            <div className="flex justify-center sm:justify-start">
-              <SocialMedia color="white" />
-            </div>
+            {/* <div className="flex justify-center sm:justify-start"> */}
+            <SocialMedia color="white" />
+            {/* </div> */}
             <div className="mt-5">
               <Link
                 to="work"
@@ -45,7 +48,7 @@ const Home = () => {
           </div>
           <div className="md:mt-0 mt-10">
             {/* Apply a margin-top of 0 on medium screens and above, 8 on small screens */}
-            <img src={profileImg} alt="Profile" />
+            <img src={profileImg} alt="Profile" className="profileImg" />
           </div>
         </div>
       </div>

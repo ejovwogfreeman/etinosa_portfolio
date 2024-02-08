@@ -17,6 +17,17 @@
   }
 
   .home {
-    padding-top: 0px;
+    padding-top: 50px;
+  }
+
+  #corner {
+    align-items: start;
+  }
+
+  .profileImg {
+    width: 100px;
+    height: 105px;
+    background-color: #ca8a04;
+    border-radius: 50%;
   }
 }
