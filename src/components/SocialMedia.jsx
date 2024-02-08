@@ -14,35 +14,38 @@ const SocialMedia = ({ color }) => {
   return (
     <div className="social-icons" style={{ color: color, borderColor: color }}>
       <a
-        href="https://www.facebook.com/"
+        href="https://www.linkedin.com/in/etinosaidowuomoruyi"
+        target="_blank"
         style={{ color: color, borderColor: color }}
       >
         <FaLinkedin />
       </a>
       <a
-        href="https://www.instagram.com/"
+        href="https://github.com/EtinRuyi"
+        target="_blank"
         style={{ color: color, borderColor: color }}
       >
         <FaGithub />
       </a>
       <a
-        href="https://www.twitter.com/"
+        href="https://twitter.com/realetinosaruyi"
+        target="_blank"
         style={{ color: color, borderColor: color }}
       >
         <FaTwitter />
       </a>
       <a
-        href="https://www.linkedin.com/"
+        href="mailto:etinosa.idowu@gmail.com"
         style={{ color: color, borderColor: color }}
       >
         <HiOutlineMail />
       </a>
-      <a
+      {/* <a
         href="https://www.github.com/ejovwogfreeman/"
         style={{ color: color, borderColor: color }}
       >
         <BsFillPersonLinesFill />
-      </a>
+      </a> */}
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import profileImg from "../assets/profile_img.png";
 import { Link } from "react-scroll";
+import SocialMedia from "./SocialMedia";
 
 const Home = () => {
   return (
@@ -27,7 +28,10 @@ const Home = () => {
               Currently, I’m focused on building responsive full-stack web
               applications.
             </p>
-            <div>
+            <div className="flex justify-center sm:justify-start">
+              <SocialMedia color="white" />
+            </div>
+            <div className="mt-5">
               <Link
                 to="work"
                 smooth={true}

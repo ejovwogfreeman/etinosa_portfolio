@@ -11,7 +11,7 @@ const Contact = () => {
       className="w-full bg-[#0a192f] flex justify-center items-center px-4 contact"
     >
       <div className="max-w-[1500px]">
-        <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300 ml-3">
+        <p className="text-4xl font-bold inline border-b-4 border-yellow-600 text-gray-300 ml-3">
           Contact
         </p>
         <div
@@ -23,7 +23,7 @@ const Contact = () => {
             <p className="my-3">
               Get in touch with me through my social media handles below.
             </p>
-            <SocialMedia color="#B53389" />
+            <SocialMedia color="#CA8A04" />
             <div className="reach mt-3 flex items-center">
               <HiOutlineMail className="icon" />
               <div className="touch ml-5">
@@ -72,7 +72,7 @@ const Contact = () => {
               placeholder="Message"
               style={{ border: "none", outline: "none", width: "100%" }}
             ></textarea>
-            <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">
+            <button className="text-white border-2 hover:bg-yellow-600 hover:border-yellow-600 px-4 py-3 my-8 mx-auto flex items-center">
               Let's Collaborate
             </button>
           </form>

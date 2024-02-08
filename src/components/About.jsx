@@ -1,4 +1,6 @@
 import React from "react";
+import profileImg from "../assets/img.png";
+import "../css/About.css";
 
 const About = () => {
   return (
@@ -16,14 +18,20 @@ const About = () => {
           </div>
           <div></div>
         </div>
-        <div className="max-w-[1300px] w-full grid sm:grid-cols-2 gap-8 px-4">
-          <div className="sm:text-right text-3xl font-bold">
-            <p>
+        <div className="max-w-[1300px] w-full grid sm:grid-cols-2 gap-8 px-4 items-center">
+          <div>
+            <img
+              src={profileImg}
+              alt=""
+              style={{ marginTop: "-100px" }}
+              className="imgcircle"
+            />
+          </div>
+          <div>
+            <p className="text-3xl font-bold mb-5">
               Hi. I'm Etinosa Omoruyi, nice to meet you. Please feel free to
               take a look around.
             </p>
-          </div>
-          <div>
             <p>
               I am passionate about building excellent software that improves
               the lives of those around me. I specialize in creating software

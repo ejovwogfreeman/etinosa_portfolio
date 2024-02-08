@@ -1,5 +1,5 @@
 .icon {
-  color: #b53389;
+  color: #ca8a04;
   font-size: 30px;
 }
 
@@ -11,9 +11,9 @@
   padding-top: 150px;
 }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .contact {
     padding-top: 500px;
     padding-bottom: 700px;
   }
-}
+} */
