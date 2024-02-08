@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+// import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Footer = () => {
   var year = new Date().getFullYear();
@@ -38,6 +38,7 @@ const Footer = () => {
               className="flex justify-between items-center w-full text-gray-300"
               href="https://www.linkedin.com/in/etinosaidowuomoruyi"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -48,6 +49,7 @@ const Footer = () => {
               className="flex justify-between items-center w-full text-gray-300"
               href="https://github.com/EtinRuyi"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Github <FaGithub size={30} />
             </a>
@@ -57,6 +59,7 @@ const Footer = () => {
               className="flex justify-between items-center w-full text-gray-300"
               href="https://twitter.com/realetinosaruyi"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Twitter <FaTwitter size={30} />
             </a>
