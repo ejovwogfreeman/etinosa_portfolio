@@ -16,7 +16,7 @@ const SocialMedia = ({ color }) => {
       <a
         href="https://www.linkedin.com/in/etinosaidowuomoruyi"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noreferrer"
         style={{ color: color, borderColor: color }}
       >
         <FaLinkedin />
@@ -24,7 +24,7 @@ const SocialMedia = ({ color }) => {
       <a
         href="https://github.com/EtinRuyi"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noreferrer"
         style={{ color: color, borderColor: color }}
       >
         <FaGithub />
@@ -32,7 +32,7 @@ const SocialMedia = ({ color }) => {
       <a
         href="https://twitter.com/realetinosaruyi"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noreferrer"
         style={{ color: color, borderColor: color }}
       >
         <FaTwitter />
