@@ -1,5 +1,6 @@
 import React from "react";
 import { data } from "../data/data.js";
+import "../css/General.css";
 
 const Work = () => {
   // projects file
@@ -7,13 +8,8 @@ const Work = () => {
   //setProject(data);
 
   return (
-    <div
-      id="work"
-      name="work"
-      className="w-full text-gray-300 bg-[#0a192f] pb-20"
-      style={{ paddingTop: "150px" }}
-    >
-      <div className="max-w-[1300px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+    <div name="work" className="w-full text-gray-300 bg-[#0a192f] general">
+      <div className="max-w-[1300px] mx-auto px-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-yellow-600">
             Work

@@ -1,0 +1,22 @@
+.icon {
+  color: #ca8a04;
+  font-size: 30px;
+}
+
+.icons {
+  font-size: 30px;
+}
+
+.general {
+  padding-top: 150px;
+}
+
+@media screen and (max-width: 500px) {
+  .general {
+    padding-top: 80px;
+  }
+
+  .home {
+    padding-top: 0px;
+  }
+}

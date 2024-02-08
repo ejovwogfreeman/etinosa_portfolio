@@ -1,5 +1,4 @@
 import React from "react";
-
 import HTML from "../assets/html.png";
 import CSS from "../assets/css.png";
 import JavaScript from "../assets/javascript.png";
@@ -11,14 +10,11 @@ import GitHub from "../assets/github.png";
 import Tailwind from "../assets/tailwind.png";
 import C_Sharp from "../assets/C-Sharp.png";
 import DotNet from "../assets/Dotnet.png";
+import "../css/General.css";
 
 const Skills = () => {
   return (
-    <div
-      name="skills"
-      className="w-full bg-[#0a192f] text-gray-300"
-      style={{ paddingTop: "150px" }}
-    >
+    <div name="skills" className="w-full bg-[#0a192f] text-gray-300 general">
       {/* Container */}
       <div className="max-w-[1300px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>

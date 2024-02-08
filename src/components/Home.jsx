@@ -3,14 +3,11 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import profileImg from "../assets/profile_img.png";
 import { Link } from "react-scroll";
 import SocialMedia from "./SocialMedia";
+import "../css/General.css";
 
 const Home = () => {
   return (
-    <div
-      name="home"
-      className="w-full bg-[#0a192f]"
-      style={{ paddingTop: "150px" }}
-    >
+    <div name="home" className="w-full bg-[#0a192f] general home">
       {/* Container */}
       <div className="max-w-[1500px] mx-auto px-2 md:px-8 flex flex-col justify-center h-full">
         <div className="flex flex-col-reverse md:flex-row items-center justify-center">

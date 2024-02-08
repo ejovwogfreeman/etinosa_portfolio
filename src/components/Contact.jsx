@@ -2,13 +2,13 @@ import React from "react";
 import SocialMedia from "./SocialMedia";
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
-import "../css/Contact.css";
+import "../css/General.css";
 
 const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full bg-[#0a192f] flex justify-center items-center px-4 contact"
+      className="w-full bg-[#0a192f] flex justify-center items-center px-4 general"
     >
       <div className="max-w-[1500px]">
         <p className="text-4xl font-bold inline border-b-4 border-yellow-600 text-gray-300 ml-3">
