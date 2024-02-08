@@ -28,7 +28,7 @@ const About = () => {
               Hi. I'm Etinosa Omoruyi, nice to meet you. Please feel free to
               take a look around.
             </p>
-            <p>
+            <p className="text-justify">
               I am passionate about building excellent software that improves
               the lives of those around me. I specialize in creating software
               for clients ranging from individuals and small-businesses all the
