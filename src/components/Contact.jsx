@@ -8,14 +8,14 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-[#0a192f] flex justify-center items-center px-4 contact"
+      className="w-full bg-[#0a192f] flex justify-center items-center px-4 contact"
     >
-      <div className="max-w-[1000px]">
+      <div className="max-w-[1500px]">
         <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300 ml-3">
           Contact
         </p>
         <div
-          className="w-full h-screen bg-[#0a192f] md:flex justify-center p-4 mt-5"
+          className="w-full bg-[#0a192f] md:flex justify-center p-4 mt-5"
           style={{ width: "100%" }}
         >
           <div className="text-gray-300 pr-10">

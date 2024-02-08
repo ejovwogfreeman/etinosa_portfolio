@@ -5,10 +5,14 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen bg-[#0a192f]">
+    <div
+      name="home"
+      className="w-full bg-[#0a192f]"
+      style={{ paddingTop: "150px" }}
+    >
       {/* Container */}
-      <div className="max-w-[1000px] mx-auto px-2 md:px-8 flex flex-col justify-center h-full">
-        <div className="flex flex-col-reverse md:flex-row items-center justify-center h-screen">
+      <div className="max-w-[1500px] mx-auto px-2 md:px-8 flex flex-col justify-center h-full">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-center">
           <div className="text-center sm:text-start">
             <p className="text-yellow-600 font-normal">Hi, my name is</p>
             <h1 className="text-xl sm:text-3xl font-bold text-[#ccd6f6]">
