@@ -1,5 +1,5 @@
-import WorkIm from "../assets/projects/workImg.jpeg";
-import RealEst from "../assets/projects/realestate.jpg";
+// import WorkIm from "../assets/projects/workImg.jpeg";
+// import RealEst from "../assets/projects/realestate.jpg";
 import pro1 from "../assets/projects/pro1.jpg";
 import pro2 from "../assets/projects/pro2.jpg";
 import pro3 from "../assets/projects/pro3.jpg";
@@ -17,21 +17,21 @@ export const data = [
     id: 2,
     name: "Ticket Ease Management System",
     image: pro2,
-    github: "",
+    github: "https://github.com/EtinRuyi/TicketEase-BackEnd",
     live: "",
   },
   {
     id: 3,
     name: "Quirk Blog",
     image: pro4,
-    github: "",
+    github: "https://github.com/EtinRuyi/Quirk",
     live: "",
   },
   {
     id: 4,
-    name: "Height Option",
+    name: "Height Auction",
     image: pro1,
-    github: "",
+    github: "https://github.com/EtinRuyi/HeightsAuction",
     live: "",
   },
 ];
