@@ -66,7 +66,7 @@ const Work = ({ light }) => {
           ))}
         </div> */}
         <div className="project-grid">
-          {data.map((x) => (
+          {project.map((x) => (
             <div className="a" key={x.id}>
               <span className="bg"></span>
               <img src={x.image} alt="" />
