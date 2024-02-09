@@ -76,24 +76,25 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.profileImg {
+  width: 60px;
+  height: 60px;
+  background-color: #ca8a04;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 500px) {
   .general {
     padding-top: 80px;
-  }
-
-  .home {
-    padding-top: 50px;
   }
 
   #corner {
     align-items: start;
   }
 
-  .profileImg {
-    width: 80px;
-    height: 85px;
-    background-color: #ca8a04;
-    border-radius: 50%;
+  .home {
+    padding-top: 50px;
   }
 
   .project-grid {

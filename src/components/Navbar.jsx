@@ -57,9 +57,9 @@ const Navbar = ({ light, handleLight }) => {
         </li>
         <li style={{ fontSize: "20px" }}>
           {light ? (
-            <MdOutlineLightMode onClick={() => handleLight()} />
-          ) : (
             <MdOutlineDarkMode onClick={() => handleLight()} />
+          ) : (
+            <MdOutlineLightMode onClick={() => handleLight()} />
           )}
         </li>
       </ul>
@@ -112,9 +112,9 @@ const Navbar = ({ light, handleLight }) => {
         </li>
         <li style={{ fontSize: "30px" }}>
           {light ? (
-            <MdOutlineLightMode onClick={() => handleLight()} />
-          ) : (
             <MdOutlineDarkMode onClick={() => handleLight()} />
+          ) : (
+            <MdOutlineLightMode onClick={() => handleLight()} />
           )}
         </li>
       </ul>

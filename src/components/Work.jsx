@@ -72,8 +72,12 @@ const Work = ({ light }) => {
               <img src={x.image} alt="" />
               <h3 className="font-bold text-lg">{x.name}</h3>
               <div>
-                <a href={x.github}>Github</a>
-                <a href={x.live}>Live</a>
+                <a href={x.github} target="_blank" rel="noreferrer">
+                  Github
+                </a>
+                <a href={x.live} target="_blank" rel="noreferrer">
+                  Live
+                </a>
               </div>
             </div>
           ))}
