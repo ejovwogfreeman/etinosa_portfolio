@@ -70,7 +70,7 @@ const Work = ({ light }) => {
             <div className="a" key={x.id}>
               <span className="bg"></span>
               <img src={x.image} alt="" />
-              <h3 className="font-bold text-3xl">{x.name}</h3>
+              <h3 className="font-bold text-lg">{x.name}</h3>
               <div>
                 <a href={x.github}>Github</a>
                 <a href={x.live}>Live</a>
