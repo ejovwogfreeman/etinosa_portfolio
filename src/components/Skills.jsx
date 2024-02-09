@@ -13,6 +13,7 @@ import docker from "../assets/docker1.jpeg";
 import azure from "../assets/azure.jpeg";
 import agile from "../assets/agile.png";
 import jira from "../assets/jira.png";
+import microservices from "../assets/microservices.png";
 import "../css/General.css";
 import Progress from "./Progress";
 
@@ -89,6 +90,16 @@ const Skills = ({ light }) => {
               style={{ width: "100px" }}
             />
             <p className="my-4">Azure</p>
+            <Progress completed={80} />
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 p-5">
+            <img
+              className="mx-auto"
+              src={microservices}
+              alt="GITHUB icon"
+              style={{ width: "100px" }}
+            />
+            <p className="my-4">Microservices</p>
             <Progress completed={80} />
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 p-5">
