@@ -28,15 +28,20 @@ function App() {
     });
   }, []);
 
+  const [light, setLight] = useState(false);
+  const handleLight = () => {
+    setLight(!light);
+  };
+
   return (
     <div className="App">
-      <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Work />
-      <Contact />
-      <Footer />
+      <Navbar light={light} handleLight={handleLight} />
+      <Home light={light} />
+      <About light={light} />
+      <Skills light={light} />
+      <Work light={light} />
+      <Contact light={light} />
+      <Footer light={light} />
       <Box
         sx={{
           "& > :not(style)": {

@@ -5,9 +5,14 @@ import { Link } from "react-scroll";
 import SocialMedia from "./SocialMedia";
 import "../css/General.css";
 
-const Home = () => {
+const Home = ({ light }) => {
+  const bgColor = light ? "bg-white" : "bg-[#0a192f]";
+  const textColor1 = light ? "text-dark" : "text-[#ccd6f6]";
+  const textColor2 = light ? "text-dark" : "text-[#8892b0]";
+  const socialColor = light ? "black" : "white";
+  const borderColor = light ? "border-black" : "border-white";
   return (
-    <div name="home" className="w-full bg-[#0a192f] general home">
+    <div name="home" className={`w-full ${bgColor} general home`}>
       {/* Container */}
       <div className="max-w-[1500px] mx-auto px-2 md:px-8 flex flex-col justify-center h-full">
         <div
@@ -16,27 +21,27 @@ const Home = () => {
         >
           <div className="text-start">
             <p className="text-yellow-600 font-normal">Hi, my name is</p>
-            <h1 className="text-xl sm:text-3xl font-bold text-[#ccd6f6]">
+            <h1 className={`text-xl sm:text-3xl font-bold ${textColor1}`}>
               OMORUYI ETINOSA
             </h1>
-            <h2 className="text-xl sm:text-3xl font-bold text-[#8892b0]">
+            <h2 className={`text-xl sm:text-3xl font-bold ${textColor2}`}>
               I'm a Full Stack Software Engineer.
             </h2>
-            <p className="text-[#8892b0] py-4 max-w-[700px] text-justify">
+            <p className={`${textColor2} py-4 max-w-[700px] text-justify`}>
               I’m a full-stack developer specializing in building (and
               occasionally designing) exceptional digital experiences.
               Currently, I’m focused on building responsive full-stack web
               applications.
             </p>
             {/* <div className="flex justify-center sm:justify-start"> */}
-            <SocialMedia color="white" />
+            <SocialMedia color={socialColor} />
             {/* </div> */}
             <div className="mt-5">
               <Link
                 to="work"
                 smooth={true}
                 duration={500}
-                className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-yellow-600 hover:border-yellow-600"
+                className={`${textColor1} group border-2 ${borderColor} px-6 py-3 my-2 flex items-center hover:bg-yellow-600 hover:border-yellow-600`}
                 style={{ display: "inline-flex", cursor: "pointer" }}
               >
                 View Work

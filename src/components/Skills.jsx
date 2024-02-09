@@ -11,10 +11,13 @@ import Tailwind from "../assets/tailwind.png";
 import C_Sharp from "../assets/C-Sharp.png";
 import DotNet from "../assets/Dotnet.png";
 import "../css/General.css";
+import Progress from "./Progress";
 
-const Skills = () => {
+const Skills = ({ light }) => {
+  const bgColor = light ? "bg-white" : "bg-[#0a192f]";
+  const textColor = light ? "text-dark" : "text-gray-300";
   return (
-    <div name="skills" className="w-full bg-[#0a192f] text-gray-300 general">
+    <div name="skills" className={`w-full ${bgColor} ${textColor} general`}>
       {/* Container */}
       <div className="max-w-[1300px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
@@ -28,32 +31,17 @@ const Skills = () => {
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 p-5">
             <img className="w-20 mx-auto" src={HTML} alt="HTML icon" />
             <p className="my-4">HTML</p>
-            <div className="relative w-full h-4 bg-gray-300 rounded-lg">
-              <div
-                className="absolute top-0 border left-0 h-full bg-blue-900 rounded-lg"
-                style={{ width: "calc(50% - 2px)" }}
-              ></div>
-            </div>
+            <Progress completed={60} />
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 p-5">
             <img className="w-20 mx-auto" src={CSS} alt="CSS icon" />
             <p className="my-4">CSS</p>
-            <div className="relative w-full h-4 bg-gray-300 rounded-lg">
-              <div
-                className="absolute top-0  border left-0 h-full bg-blue-900 rounded-lg"
-                style={{ width: "calc(50% - 2px)" }}
-              ></div>
-            </div>
+            <Progress completed={60} />
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 p-5">
             <img className="w-20 mx-auto" src={Tailwind} alt="TAILWIND icon" />
             <p className="my-4">TAILWIND</p>
-            <div className="relative w-full h-4 bg-gray-300 rounded-lg">
-              <div
-                className="absolute top-0  border left-0 h-full bg-blue-900 rounded-lg"
-                style={{ width: "calc(60% - 2px)" }}
-              ></div>
-            </div>
+            <Progress completed={60} />
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 p-5">
             <img
@@ -62,52 +50,32 @@ const Skills = () => {
               alt="JAVASCRIPT icon"
             />
             <p className="my-4">JAVASCRIPT</p>
-            <div className="relative w-full h-4 bg-gray-300 rounded-lg">
-              <div
-                className="absolute top-0  border left-0 h-full bg-blue-900 rounded-lg"
-                style={{ width: "calc(60% - 2px)" }}
-              ></div>
-            </div>
+            <Progress completed={60} />
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 p-5">
             <img className="w-20 mx-auto" src={ReactImg} alt="REACT icon" />
             <p className="my-4">REACT</p>
-            <div className="relative w-full h-4 bg-gray-300 rounded-lg">
-              <div
-                className="absolute top-0  border left-0 h-full bg-blue-900 rounded-lg"
-                style={{ width: "calc(60% - 2px)" }}
-              ></div>
-            </div>
+            <Progress completed={60} />
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 p-5">
             <img className="w-20 mx-auto" src={GitHub} alt="GITHUB icon" />
             <p className="my-4">GITHUB</p>
-            <div className="relative w-full h-4 bg-gray-300 rounded-lg">
-              <div
-                className="absolute top-0  border left-0 h-full bg-blue-900 rounded-lg"
-                style={{ width: "calc(70% - 2px)" }}
-              ></div>
-            </div>
+            <Progress completed={60} />
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 p-5">
             <img className="w-40 mx-auto" src={DotNet} alt=".Net icon" />
             <p className="my-4">.Net</p>
-            <div className="relative w-full h-4 bg-gray-300 rounded-lg">
-              <div
-                className="absolute top-0  border left-0 h-full bg-blue-900 rounded-lg"
-                style={{ width: "calc(100%)" }}
-              ></div>
-            </div>
+            <Progress completed={80} />
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 p-5">
-            <img className="w-20 mx-auto" src={C_Sharp} alt=".C_Sharp icon" />
-            <p className="my-4">C_Sharp</p>
-            <div className="relative w-full h-4 bg-gray-300 rounded-lg">
-              <div
-                className="absolute top-0  border left-0 h-full bg-blue-900 rounded-lg"
-                style={{ width: "calc(100%)" }}
-              ></div>
-            </div>
+            <img
+              className="w-20 mx-auto"
+              src={C_Sharp}
+              alt=".C_Sharp icon"
+              style={{ marginTop: "-5px" }}
+            />
+            <p className="mt-2 mb-4">C_Sharp</p>
+            <Progress completed={80} />
           </div>
         </div>
       </div>

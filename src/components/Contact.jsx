@@ -4,21 +4,28 @@ import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import "../css/General.css";
 
-const Contact = () => {
+const Contact = ({ light }) => {
+  const bgColor = light ? "bg-white" : "bg-[#0a192f]";
+  const textColor = light ? "text-dark" : "text-gray-300";
+  const textColor1 = light ? "text-dark" : "text-[#ccd6f6]";
+  const borderColor = light ? "border-black" : "border-white";
+
   return (
     <div
       name="contact"
-      className="w-full bg-[#0a192f] flex justify-center items-center px-4 general"
+      className={`w-full ${bgColor} flex justify-center items-center px-4 general`}
     >
       <div className="max-w-[1500px]">
-        <p className="text-4xl font-bold inline border-b-4 border-yellow-600 text-gray-300 ml-3">
+        <p
+          className={`text-4xl font-bold inline border-b-4 border-yellow-600 ${textColor} ml-3`}
+        >
           Contact
         </p>
         <div
-          className="w-full bg-[#0a192f] md:flex justify-center p-4 mt-5"
+          className={`w-full ${bgColor} md:flex justify-center p-4 mt-5`}
           style={{ width: "100%" }}
         >
-          <div className="text-gray-300 pr-10">
+          <div className={`${textColor} pr-10`}>
             <h1 className="text-2xl">Get In Touch</h1>
             <p className="my-3">
               Get in touch with me through my social media handles below.
@@ -46,7 +53,7 @@ const Contact = () => {
             className="flex flex-col max-w-[500px] w-full"
           >
             <div className="pb-8">
-              <p className="text-gray-300 py-4 text-2xl">
+              <p className={`${textColor} py-4 text-2xl`}>
                 Submit the form below or shoot me an email -
                 etinosa.idowu@gmail.com
               </p>
@@ -72,7 +79,9 @@ const Contact = () => {
               placeholder="Message"
               style={{ border: "none", outline: "none", width: "100%" }}
             ></textarea>
-            <button className="text-white border-2 hover:bg-yellow-600 hover:border-yellow-600 px-4 py-3 my-8 mx-auto flex items-center">
+            <button
+              className={`${textColor1} group border-2 ${borderColor} border-2 hover:bg-yellow-600 hover:border-yellow-600 px-4 py-3 my-8 mx-auto flex items-center`}
+            >
               Let's Collaborate
             </button>
           </form>

@@ -11,6 +11,71 @@
   padding-top: 150px;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.project-grid .a {
+  position: relative;
+}
+
+.project-grid .a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: block;
+}
+
+.project-grid .a h3 {
+  color: white;
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.project-grid .a div {
+  color: white;
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.project-grid .a div a {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.project-grid .a:hover h3 {
+  opacity: 1;
+}
+.project-grid .a:hover div {
+  opacity: 1;
+}
+.project-grid .a:hover .bg {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 @media screen and (max-width: 500px) {
   .general {
     padding-top: 80px;
@@ -29,5 +94,14 @@
     height: 105px;
     background-color: #ca8a04;
     border-radius: 50%;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    border-radius: 5px;
   }
 }

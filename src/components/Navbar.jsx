@@ -12,14 +12,16 @@ import {
 // import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
-const Navbar = () => {
+const Navbar = ({ light, handleLight }) => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-
+  const bgColor = light ? "bg-white" : "bg-[#0a192f]";
+  const textColor = light ? "text-dark" : "text-gray-300";
   return (
     <div
-      className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300"
+      className={`fixed w-full h-[80px] flex justify-between items-center px-4 ${bgColor} ${textColor}`}
       style={{ zIndex: 1000 }}
     >
       <div>
@@ -53,10 +55,21 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
+        <li style={{ fontSize: "20px" }}>
+          {light ? (
+            <MdOutlineLightMode onClick={() => handleLight()} />
+          ) : (
+            <MdOutlineDarkMode onClick={() => handleLight()} />
+          )}
+        </li>
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
+      <div
+        onClick={handleClick}
+        className="md:hidden z-10"
+        style={{ cursor: "pointer" }}
+      >
         {!nav ? <FaBars className="icons" /> : <FaTimes className="icons" />}
       </div>
 
@@ -65,7 +78,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : `absolute top-0 left-0 w-full h-screen ${bgColor} flex flex-col justify-center items-center`
         }
       >
         <li className="py-6 text-4xl">
@@ -96,6 +109,13 @@ const Navbar = () => {
           <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
           </Link>
+        </li>
+        <li style={{ fontSize: "30px" }}>
+          {light ? (
+            <MdOutlineLightMode onClick={() => handleLight()} />
+          ) : (
+            <MdOutlineDarkMode onClick={() => handleLight()} />
+          )}
         </li>
       </ul>
     </div>

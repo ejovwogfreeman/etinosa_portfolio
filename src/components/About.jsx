@@ -2,9 +2,11 @@ import React from "react";
 import profileImg from "../assets/img.png";
 import "../css/General.css";
 
-const About = () => {
+const About = ({ light }) => {
+  const bgColor = light ? "bg-white" : "bg-[#0a192f]";
+  const textColor = light ? "text-dark" : "text-gray-300";
   return (
-    <div name="about" className="w-full bg-[#0a192f] text-gray-300 general">
+    <div name="about" className={`w-full ${bgColor} ${textColor} general`}>
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1300px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
