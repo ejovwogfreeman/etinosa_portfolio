@@ -37,7 +37,7 @@ export const data = [
   },
   {
     id: 4,
-    name: "Height Auction",
+    name: "Heights Auction",
     image: pro1,
     github: "https://github.com/EtinRuyi/HeightsAuction",
     live: "",
