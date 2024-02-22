@@ -11,6 +11,7 @@ const Home = ({ light }) => {
   const textColor2 = light ? "text-dark" : "text-[#8892b0]";
   const socialColor = light ? "black" : "white";
   const borderColor = light ? "border-black" : "border-white";
+  const isHome = true;
   return (
     <div name="home" className={`w-full ${bgColor} general home`}>
       {/* Container */}
@@ -20,21 +21,22 @@ const Home = ({ light }) => {
           id="corner"
         >
           <div className="text-start">
-            <p className="text-yellow-600 font-normal">Hi, my name is</p>
-            <h1 className={`text-xl sm:text-3xl font-bold ${textColor1}`}>
+            {/* <p className="text-yellow-600 font-normal">Hi, my name is</p> */}
+            {/* <h1 className={`text-xl sm:text-3xl font-bold ${textColor1}`}>
               OMORUYI ETINOSA
-            </h1>
+            </h1> */}
             <h2 className={`text-xl sm:text-3xl font-bold ${textColor2}`}>
-              I'm a Full Stack Software Engineer.
+              Software Engineer, .NET Developer
             </h2>
             <p className={`${textColor2} py-4 max-w-[700px] text-justify`}>
-              I’m a full-stack developer specializing in building (and
-              occasionally designing) exceptional digital experiences.
-              Currently, I’m focused on building responsive full-stack web
-              applications.
+              I'm Etinosa, a dedicated software engineer with a passion for
+              crafting exceptional, secure, and robust applications to solve
+              complex business challenges. My guiding principles are growth,
+              kindness, honesty, transparency, and a commitment to continuous
+              learning and development.
             </p>
             {/* <div className="flex justify-center sm:justify-start"> */}
-            <SocialMedia color={socialColor} />
+            <SocialMedia color={socialColor} isHome={isHome} />
             {/* </div> */}
             <div className="mt-5">
               <Link

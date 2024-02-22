@@ -35,11 +35,11 @@ export const data = [
     github: "https://github.com/EtinRuyi/Quirk",
     live: "",
   },
-  {
-    id: 4,
-    name: "Heights Auction",
-    image: pro1,
-    github: "https://github.com/EtinRuyi/HeightsAuction",
-    live: "",
-  },
+  // {
+  //   id: 4,
+  //   name: "Heights Auction",
+  //   image: pro1,
+  //   github: "https://github.com/EtinRuyi/HeightsAuction",
+  //   live: "",
+  // },
 ];

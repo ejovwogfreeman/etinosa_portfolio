@@ -12,12 +12,12 @@ const Work = ({ light }) => {
 
   return (
     <div name="work" className={`w-full ${bgColor} ${textColor} general`}>
-      <div className="max-w-[1300px] mx-auto px-4 flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1200px] mx-auto px-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-yellow-600">
             Work
           </p>
-          <p className="py-6">Check out some of my recent work</p>
+          <p className="py-6">Check out some of my interesting projects</p>
         </div>
 
         {/* container for projects */}

@@ -1,6 +1,7 @@
 import React from "react";
 import SocialMedia from "./SocialMedia";
 import "../css/Footer.css";
+import resume from "../assets/Etinosa_Omoruyi_Resume.pdf";
 
 import {
   FaGithub,
@@ -11,7 +12,7 @@ import {
 } from "react-icons/fa";
 
 import { HiOutlineMail } from "react-icons/hi";
-// import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Footer = ({ light }) => {
   var year = new Date().getFullYear();
@@ -19,13 +20,14 @@ const Footer = ({ light }) => {
   const textColor = light ? "text-black" : "text-white";
   const bgColor = light ? "bg-[#ccd6f6]" : "bg-black";
   const lineColor = light ? "1px solid black" : "1px solid white";
+  const isHome = false;
   return (
     <>
       <footer className={`${bgColor} ${textColor}`}>
         <div className="line" style={{ borderBottom: lineColor }}></div>
         <h1 className={`text-4xl ${bgColor}`}>Etinosa Omoruyi</h1>
         <p className="social">
-          <SocialMedia color={socialColor} />
+          <SocialMedia color={socialColor} isHome={false} />
         </p>
         <p>Copyright &copy; {year} | All rights reserved.</p>
       </footer>
@@ -75,14 +77,16 @@ const Footer = ({ light }) => {
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          {/* <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#1d0821]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#1d0821]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href={resume}
+              target="_blank"
+              rel="noreferrer"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
-          </li> */}
+          </li>
         </ul>
       </div>
     </>

@@ -9,28 +9,26 @@ const Contact = ({ light }) => {
   const textColor = light ? "text-dark" : "text-gray-300";
   const textColor1 = light ? "text-dark" : "text-[#ccd6f6]";
   const borderColor = light ? "border-black" : "border-white";
+  const isHome = false;
 
   return (
-    <div
-      name="contact"
-      className={`w-full ${bgColor} flex justify-center items-center px-4 general`}
-    >
-      <div className="max-w-[1500px]">
-        <p
-          className={`text-4xl font-bold inline border-b-4 border-yellow-600 ${textColor} ml-3`}
-        >
-          Contact
-        </p>
+    <div name="contact" className={`w-full ${bgColor} ${textColor} general`}>
+      <div className="max-w-[1200px] mx-auto p-4 flex flex-col justify-between w-full">
+        <div className="pb-8 pl-4">
+          <p className="text-3xl font-bold inline border-b-4 border-yellow-600">
+            Contact
+          </p>
+        </div>
         <div
-          className={`w-full ${bgColor} md:flex justify-center p-4 mt-5`}
+          className={`w-full md:flex md:justify-between  p-4 mt-5`}
           style={{ width: "100%" }}
         >
           <div className={`${textColor} pr-10`}>
-            <h1 className="text-2xl">Get In Touch</h1>
+            {/* <h1 className="text-2xl">Get In Touch</h1> */}
             <p className="my-3">
-              Get in touch with me through my social media handles below.
+              Get in touch with me through my social media handles
             </p>
-            <SocialMedia color="#CA8A04" />
+            <SocialMedia color="#CA8A04" isHome={isHome} />
             <div className="reach mt-3 flex items-center">
               <HiOutlineMail className="icon" />
               <div className="touch ml-5">
@@ -42,20 +40,19 @@ const Contact = ({ light }) => {
               <BsTelephone className="icon" />
               <div className="touch ml-5">
                 <p>+234(0)705 944 2002</p>
-                <small>Place a call Anttime!</small>
+                <small>Place a call Anytime!</small>
               </div>
             </div>
           </div>
 
           <form
             method="POST"
-            action="mailto:orjisamuelobinna@gmail.com"
+            action="mailto:etinosa.idowu@gmail.com"
             className="flex flex-col max-w-[500px] w-full"
           >
             <div className="pb-8">
               <p className={`${textColor} py-4 text-2xl`}>
-                Submit the form below or shoot me an email -
-                etinosa.idowu@gmail.com
+                Please submit the form below to shoot me an email
               </p>
             </div>
             <input
@@ -63,21 +60,36 @@ const Contact = ({ light }) => {
               type="text"
               placeholder="Name"
               name="name"
-              style={{ border: "none", outline: "none", width: "100%" }}
+              style={{
+                border: "none",
+                outline: "none",
+                width: "100%",
+                color: "black",
+              }}
             />
             <input
               className="my-4 p-2 bg-[#ccd6f6]"
               type="email"
               placeholder="Email"
               name="email"
-              style={{ border: "none", outline: "none", width: "100%" }}
+              style={{
+                border: "none",
+                outline: "none",
+                width: "100%",
+                color: "black",
+              }}
             />
             <textarea
               className="bg-[#ccd6f6] p-2"
               name="message"
               rows="10"
               placeholder="Message"
-              style={{ border: "none", outline: "none", width: "100%" }}
+              style={{
+                border: "none",
+                outline: "none",
+                width: "100%",
+                color: "black",
+              }}
             ></textarea>
             <button
               className={`${textColor1} group border-2 ${borderColor} border-2 hover:bg-yellow-600 hover:border-yellow-600 px-4 py-3 my-8 mx-auto flex items-center`}
