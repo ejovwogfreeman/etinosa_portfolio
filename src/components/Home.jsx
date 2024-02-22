@@ -25,9 +25,9 @@ const Home = ({ light }) => {
             {/* <h1 className={`text-xl sm:text-3xl font-bold ${textColor1}`}>
               OMORUYI ETINOSA
             </h1> */}
-            <h2 className={`text-xl sm:text-3xl font-bold ${textColor2}`}>
-              Software Engineer, .NET Developer
-            </h2>
+            <h1 className={`text-xl sm:text-3xl font-bold ${textColor1}`}>
+              Software Engineer, .NET <br />Developer, and Entrepreneur.
+            </h1>
             <p className={`${textColor2} py-4 max-w-[700px] text-justify`}>
               I'm Etinosa, a dedicated software engineer with a passion for
               crafting exceptional, secure, and robust applications to solve
