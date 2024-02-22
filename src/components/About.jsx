@@ -4,13 +4,17 @@ import "../css/General.css";
 
 const About = ({ light }) => {
   const bgColor = light ? "bg-white" : "bg-[#0a192f]";
-  const textColor = light ? "text-dark" : "text-gray-300";
+  //const textColor = light ? "text-dark" : "text-white";
+  const textColor1 = light ? "text-dark" : "text-[#ccd6f6]";
+  const textColor2 = light ? "text-dark" : "text-[#8892b0]";
   return (
-    <div name="about" className={`w-full ${bgColor} ${textColor} general`}>
+    <div name="about" className={`w-full ${bgColor} general`}>
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1200px] w-full grid grid-cols-2 gap-8">
           <div className="pb-8 pl-4">
-            <p className="text-3xl font-bold inline border-b-4 border-yellow-600">
+            <p
+              className={`text-3xl font-bold inline border-b-4 border-yellow-600 ${textColor1}`}
+            >
               About Me
             </p>
           </div>
@@ -26,8 +30,10 @@ const About = ({ light }) => {
             />
           </div>
           <div>
-            <p className="text-3xl font-bold mb-5">I'm Etinosa Omoruyi</p>
-            <p className="text-justify">
+            <p className={`text-3xl font-bold mb-5 ${textColor1}`}>
+              I'm Etinosa Omoruyi
+            </p>
+            <p className={`text-justify ${textColor2}`}>
               A Dedicated software engineer with a drive for crafting
               exceptional, secure applications to solve complex business
               challenges.
@@ -37,9 +43,10 @@ const About = ({ light }) => {
               collaborating with cross-functional teams to deliver high-quality
               products.
               <br />
-              Proficient in C#, JavaScript, frameworks like ASP.NET and React,
-              and tools like Git, Docker, Azure and I excel in designing RESTful
-              APIs and microservices architectures.
+              Proficient in C#, JavaScript, frameworks like ASP.NET Core, Entity
+              Framework Core and React, and tools like Git, Docker, Azure, SQL
+              Server, MySQL, and PostgreSQL. I excel in designing RESTful APIs
+              and microservices architectures.
               <br />I value collaboration, fostering positive relationships, and
               continuous learning. Eager to connect and create impactful
               solutions for your business.

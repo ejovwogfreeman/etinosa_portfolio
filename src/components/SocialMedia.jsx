@@ -7,13 +7,27 @@ import {
   // FaLinkedinIn,
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-// import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 import "../css/SocialMedia.css";
+import resume from "../assets/Etinosa_Omoruyi_Resume.pdf";
 
 const SocialMedia = ({ color, isHome }) => {
   console.log(isHome);
   return (
     <div className="social-icons" style={{ color: color, borderColor: color }}>
+      <a
+        style={{ display: "none" }}
+        href="https://www.linkedin.com/in/etinosaidowuomoruyi"
+        target="_blank"
+        rel="noreferrer"
+        className={`${
+          isHome
+            ? "hover:bg-yellow-600 hover:border-yellow-600"
+            : `hover:${color}`
+        }`}
+      >
+        <FaLinkedin />
+      </a>
       <a
         href="https://www.linkedin.com/in/etinosaidowuomoruyi"
         target="_blank"
@@ -60,12 +74,18 @@ const SocialMedia = ({ color, isHome }) => {
       >
         <HiOutlineMail />
       </a>
-      {/* <a
-        href="https://www.github.com/ejovwogfreeman/"
-        style={{ color: color, borderColor: color }}
+      <a
+        href={resume}
+        target="_blank"
+        rel="noreferrer"
+        className={`${
+          isHome
+            ? "hover:bg-yellow-600 hover:border-yellow-600"
+            : `hover:${color}`
+        }`}
       >
         <BsFillPersonLinesFill />
-      </a> */}
+      </a>
     </div>
   );
 };

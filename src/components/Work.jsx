@@ -9,15 +9,17 @@ const Work = ({ light }) => {
 
   const bgColor = light ? "bg-white" : "bg-[#0a192f]";
   const textColor = light ? "text-dark" : "text-gray-300";
+  const textColor1 = light ? "text-dark" : "text-[#ccd6f6]";
+  const textColor2 = light ? "text-dark" : "text-[#8892b0]";
 
   return (
     <div name="work" className={`w-full ${bgColor} ${textColor} general`}>
       <div className="max-w-[1200px] mx-auto px-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-yellow-600">
+          <p className={`text-3xl font-bold inline border-b-4 border-yellow-600 ${textColor1}`}>
             Work
           </p>
-          <p className="py-6">Check out some of my interesting projects</p>
+          <p className={`py-4 ${textColor2}`}>Check out some of my interesting projects</p>
         </div>
 
         {/* container for projects */}
